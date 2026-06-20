@@ -14,7 +14,7 @@ export function About() {
           <div className="space-y-5 text-lg leading-relaxed text-muted-foreground">
             <p>
               I'm <span className="text-foreground">{profile.name}</span>, a{" "}
-              {profile.role} at {profile.company}. I care about systems that are
+              {profile.role}{profile.company ? ` at ${profile.company}` : ""}. I care about systems that are
               simple on the outside and rigorous underneath.
             </p>
             <p>
@@ -35,7 +35,7 @@ export function About() {
             <dl className="relative space-y-5">
               {[
                 ["Role", profile.role],
-                ["Company", profile.company],
+                ...(profile.company ? [["Company", profile.company]] : []),
                 ["Based in", profile.location],
                 ["Focus", "Backend · Algorithms · AI"],
                 ["Status", "Open to opportunities"],

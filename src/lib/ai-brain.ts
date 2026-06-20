@@ -1,7 +1,7 @@
 import { profile, skillGroups, projects } from "./data";
 
 /**
- * AETHER — Malhar's AI twin (local brain).
+ * AETHER — Srushti's AI twin (local brain).
  *
  * Right now this answers from a hand-written knowledge base so the site works
  * with zero backend. To make it a *real* LLM, replace `askAether` with a call
@@ -13,12 +13,12 @@ const knowledge: { match: RegExp; answer: string }[] = [
   {
     match: /\b(hi|hello|hey|yo|sup|greetings)\b/i,
     answer:
-      "Hey! I'm Aether — Malhar's AI twin. Ask me about his skills, projects, experience, or how to get in touch.",
+      "Hey! I'm Aether — Srushti's AI twin. Ask me about his skills, projects, experience, or how to get in touch.",
   },
   {
     match: /(who are you|what are you|aether)/i,
     answer:
-      "I'm Aether, an AI version of Malhar Jadhav. Think of me as his portfolio you can actually talk to. Ask away.",
+      "I'm Aether, an AI version of Srushti Jadhav. Think of me as his portfolio you can actually talk to. Ask away.",
   },
   {
     match: /(who is|about|tell me about|bio|background|yourself)/i,
@@ -45,30 +45,32 @@ const knowledge: { match: RegExp; answer: string }[] = [
     answer:
       "A few things he's worked on:\n" +
       projects.map((p) => `• ${p.name} — ${p.blurb}`).join("\n") +
-      `\nMore on GitHub: github.com/247software-Malhar-Jadhav`,
+      `\nMore on GitHub: github.com/247software-Srushti-Jadhav`,
   },
   {
     match: /(leetcode|dsa|algorithm|competitive|problem)/i,
     answer:
-      "Malhar has solved 200+ problems on LeetCode and treats DSA as a craft. Profile: leetcode.com/u/malharjadhav8999",
+      "Srushti has solved 200+ problems on LeetCode and treats DSA as a craft. Profile: leetcode.com/u/Srushtijadhav8999",
   },
   {
     match: /(blog|medium|write|article|writing)/i,
     answer:
-      "He writes on Medium about engineering and problem-solving: medium.com/@malharjadhav8999",
+      "He writes on Medium about engineering and problem-solving: medium.com/@Srushtijadhav8999",
   },
   {
     match: /(contact|reach|email|hire|available|opportunit|job|connect|touch)/i,
-    answer: `Easiest ways to reach him:\n• Email: ${profile.email}\n• Phone: ${profile.phone}\n• LinkedIn: linkedin.com/in/malhar-jadhav-137b2a215\nHe's open to interesting opportunities.`,
+    answer: `Easiest ways to reach him:\n• Email: ${profile.email}\n• Phone: ${profile.phone}\n• LinkedIn: linkedin.com/in/Srushti-jadhav-137b2a215\nHe's open to interesting opportunities.`,
   },
   {
     match: /(experience|company|247|job|role|work at)/i,
-    answer: `He currently works as a ${profile.role} at ${profile.company}, building and scaling software in production.`,
+    answer: profile.company
+      ? `He currently works as a ${profile.role} at ${profile.company}, building and scaling software in production.`
+      : `He currently works as a ${profile.role}, building and scaling software in production.`,
   },
   {
     match: /(ai|ml|machine learning|llm|model)/i,
     answer:
-      "Malhar works with applied ML and is genuinely into AI — this very portfolio ships an AI twin (me!). He's comfortable wiring LLMs into real products.",
+      "Srushti works with applied ML and is genuinely into AI — this very portfolio ships an AI twin (me!). He's comfortable wiring LLMs into real products.",
   },
   {
     match: /(thank|thanks|cool|nice|awesome|great)/i,
@@ -80,11 +82,11 @@ const knowledge: { match: RegExp; answer: string }[] = [
 
 const fallbacks = [
   `I don't have a canned answer for that yet — but here's the gist: ${profile.name} is a ${profile.role} into backend, algorithms, and AI. Try asking about his skills, projects, or how to reach him.`,
-  `Good question — I'd point you to his work directly. Reach Malhar at ${profile.email}, or ask me about his stack or projects.`,
+  `Good question — I'd point you to his work directly. Reach Srushti at ${profile.email}, or ask me about his stack or projects.`,
 ];
 
 export const suggestedQuestions = [
-  "What is Malhar's strongest skill?",
+  "What is Srushti's strongest skill?",
   "Show me his projects",
   "What's his tech stack?",
   "How do I get in touch?",
@@ -93,7 +95,7 @@ export const suggestedQuestions = [
 /** Local, offline brain. Returns the full answer text. */
 export function askAether(question: string): string {
   const q = question.trim();
-  if (!q) return "Ask me anything about Malhar — skills, projects, or contact.";
+  if (!q) return "Ask me anything about Srushti — skills, projects, or contact.";
   for (const entry of knowledge) {
     if (entry.match.test(q)) return entry.answer;
   }

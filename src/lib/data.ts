@@ -8,17 +8,27 @@ import {
   type LucideIcon,
 } from "lucide-react";
 
-export const profile = {
+export const profile: {
+  name: string;
+  initials: string;
+  role: string;
+  company?: string;
+  location: string;
+  tagline: string;
+  blurb: string;
+  email: string;
+  phone: string;
+} = {
   name: "Malhar Jadhav",
-  initials: "MJ",
+  initials: "SJ",
   role: "Software Engineer",
-  company: "247software",
+  // company: "247software",
   location: "India",
   tagline: "I build intelligent systems.",
   blurb:
     "Software engineer who likes turning messy problems into clean, scalable systems — from backend services to applied AI. I write about the craft, grind algorithms for fun, and ship things that feel inevitable.",
-  email: "malharjadhav8999@gmail.com",
-  phone: "+91 9767446751",
+  email: "jadhadsrushti1544@gmail.com",
+  phone: "+91 914550 0321",
 };
 
 export type SocialLink = {
@@ -41,12 +51,12 @@ export const socials: SocialLink[] = [
     href: "https://www.linkedin.com/in/malhar-jadhav-137b2a215",
     icon: Linkedin,
   },
-  {
-    label: "Medium",
-    handle: "@malharjadhav8999",
-    href: "https://medium.com/@malharjadhav8999",
-    icon: PenLine,
-  },
+  // {
+  //   label: "Medium",
+  //   handle: "@malharjadhav8999",
+  //   href: "https://medium.com/@malharjadhav8999",
+  //   icon: PenLine,
+  // },
   {
     label: "LeetCode",
     handle: "malharjadhav8999",

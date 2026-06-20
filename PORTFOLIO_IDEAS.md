@@ -1,4 +1,4 @@
-# 🛰️ Malhar Jadhav — Portfolio Concepts
+# 🛰️ Srushti Jadhav — Portfolio Concepts
 
 > Pick ONE direction (or mix-and-match). Each is **AI-integrated**, has **dark/lite mode (sun/moon radio toggle)**, and is built with **React + Tailwind + shadcn + Framer Motion**.
 >
@@ -21,10 +21,10 @@
 
 ```
 ┌──────────────────────────────────────────────────────────┐
-│  ✦ MJ          About  Work  Writing      ☀/☾   [Ask ⌘K]  │
+│  ✦ SJ          About  Work  Writing      ☀/☾   [Ask ⌘K]  │
 ├──────────────────────────────────────────────────────────┤
 │        ·  ✦      ·         ·     ✦   ·                    │
-│   ·        Malhar Jadhav              ·      ✦            │
+│   ·        Srushti Jadhav              ·      ✦            │
 │      ✦   I build intelligent systems.    ·               │
 │   ·         ·     [ Talk to my AI twin → ]      ·         │
 │        ·          ✦         ·        ·                    │
@@ -50,9 +50,9 @@
 - Boot sequence on load, blinking caret, glassy window chrome.
 
 ```
-┌─ malhar@portfolio ── ─ ☀/☾ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ □ ✕ ─┐
+┌─ Srushti@portfolio ── ─ ☀/☾ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ □ ✕ ─┐
 │ $ whoami                                               │
-│ > Malhar Jadhav — Software Engineer @ 247software      │
+│ > Srushti Jadhav — Software Engineer @ 247software      │
 │ $ ls projects/                                         │
 │ > [████] repo-1   [████] repo-2   [████] repo-3        │
 │ $ ai "what's your strongest skill?"                    │
@@ -78,7 +78,7 @@
 - Drop caps, hairline rules, halftone image treatment, grain.
 
 ```
-╔══════════════ THE MALHAR DISPATCH ══════ Vol.1 ☀/☾ ══╗
+╔══════════════ THE Srushti DISPATCH ══════ Vol.1 ☀/☾ ══╗
 ║  "Engineer turns coffee into distributed systems"      ║
 ║ ┌─────────────┐  Lorem developer ipsum builds at      ║
 ║ │   PORTRAIT  │  scale. Drop-cap E ditorial body text  ║
@@ -161,7 +161,7 @@
 ┌──────────────── ☀/☾ ──┐   ● ○ ○ ○ ○  (rail)
 │   01 / HELLO           │
 │                        │
-│   I'm Malhar.          │
+│   I'm Srushti.         │
 │   Swipe to explore ↓   │
 │                        │
 │            (💬 AI bubble follows you)

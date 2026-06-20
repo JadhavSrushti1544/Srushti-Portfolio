@@ -1,4 +1,4 @@
-# ✦ AETHER — Malhar Jadhav's Portfolio
+# ✦ AETHER — Srushti Jadhav's Portfolio
 
 A cosmic-observatory portfolio with a **chat-with-my-AI-twin** dock, a living
 constellation hero, and a **sun/moon** day/night theme toggle.
